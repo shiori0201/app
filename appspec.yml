@@ -1,0 +1,9 @@
+version: 0.0
+os: linux
+files:
+  - source: ./sleep.sh
+    destination: /tmp
+hooks:
+  AfterInstall:
+    - location: after-install.sh
+      timeout: 60
